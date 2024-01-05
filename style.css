@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	/* changes the 1REM from 16px to 10px */
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	height: 100vh;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.main-container {
+	overflow: hidden;
+	border-radius: 5px;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.search-section {
+	padding: 2rem;
+	color: #fff;
+	background-color: rgb(28, 101, 236);
+}
+
+h3 {
+	letter-spacing: 1px;
+	font-size: 1.6rem;
+	margin: 0.6rem 0;
+}
+
+.search-section p {
+	font-size: 1.2rem;
+	margin-bottom: 2rem;
+}
+
+.search-section input {
+	color: #fff;
+	border: none;
+	padding: 0.8rem 1.4rem;
+	font-size: 1.6rem;
+	text-transform: capitalize;
+	font-family: inherit;
+	background-color: rgb(2, 45, 110);
+	border-radius: 20px;
+	box-shadow: 0 1px 8px rgba(255, 255, 255, 0.2);
+}
+
+.search-section input:focus,
+.search-section input:focus-visible {
+	outline: none;
+}
+
+.user-list {
+	background-color: #fff;
+	list-style: none;
+	max-height: 38rem;
+	overflow-y: scroll;
+}
+
+.user-list::-webkit-scrollbar {
+	background-color: #eee;
+	width: 1rem;
+}
+
+.user-list::-webkit-scrollbar-thumb {
+	background-color: #aaa;
+	border-radius: 12px;
+}
+
+.user-list li {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: 1rem;
+	padding: 2rem;
+	font-size: 1.6rem;
+	font-weight: bold;
+}
+
+.user-list li:not(:last-of-type) {
+	border-bottom: 1px solid #eee;
+}
+
+.user-list li img {
+	border-radius: 50%;
+	object-fit: cover;
+	width: 5rem;
+	height: 5rem;
+}
+
+.user-info h4 {
+	letter-spacing: 0.6px;
+	font-weight: 900;
+	margin: 0.5rem 0;
+}
+
+.user-info p {
+	font-weight: 400;
+	font-size: 1.3rem;
+	letter-spacing: 0.5px;
+}
+
+.hide {
+	display: none !important;
+}
